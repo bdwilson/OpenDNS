@@ -34,7 +34,7 @@ issues, otherwise, you're going to be blocking potentially valid things, plus
 your OpenDNS block list will become quickly even more unamanable. The snippet
 below shows bumped my score threshold up to 120.</b>
 
-<code>
+<pre>
             if score > 120:
                 tqdm.tqdm.write(
                     "\033[91mSuspicious: "
@@ -48,7 +48,7 @@ below shows bumped my score threshold up to 120.</b>
             #                            #        "\033[4m{}\033[0m\033[0m
             #                            (score={})".format(domain, score))
             #
-</code>
+</pre>
 
 Then run your script once you have output:
 <code> % cat suspecious_domains.log | ./processPhishes.pl
