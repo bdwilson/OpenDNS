@@ -29,6 +29,7 @@ Requirements: [phishing_catcher](https://github.com/x0rz/phishing_catcher) from
 
 You can use this script to process the logs for phishing_catcher and add them
 to OpenDNS.
+<br>
 <b>Suggestion: Edit your catch_phishing.py script so it only logs really bad
 issues, otherwise, you're going to be blocking potentially valid things, plus
 your OpenDNS block list will become quickly even more unamanable. The snippet
@@ -50,8 +51,10 @@ below shows bumped my score threshold up to 120.</b>
             #
 </pre>
 
-Then run your script once you have output:
-<code> % cat suspecious_domains.log | ./processPhishes.pl
+Then run your script from your phishing_catcher directory once you have some
+output:
+<br>
+<code> % cat suspicious_domains.log | ./processPhishes.pl
 </code>
 
 Cron this up - if you dare. 
@@ -61,6 +64,10 @@ OpenDNSUpdateCheck.sh
 Script to check a domain to see how long it takes for the block to become
 effective.
 
+<code>
+$ ./OpenDNSUpdateCheck.sh
+Usage: ./OpenDNSUpdateCheck.sh <domain to check>
+</code>
 
 Bugs/Contact Info
 -----------------
