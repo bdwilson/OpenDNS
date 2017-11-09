@@ -29,7 +29,7 @@ Requirements: [phishing_catcher](https://github.com/x0rz/phishing_catcher) from
 
 You can use this script to process the logs for phishing_catcher and add them
 to OpenDNS.
-<br>
+<br><br>
 <b>Suggestion: Edit your catch_phishing.py script so it only logs really bad
 issues, otherwise, you're going to be blocking potentially valid things, plus
 your OpenDNS block list will become quickly even more unamanable. The snippet
