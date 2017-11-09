@@ -32,7 +32,7 @@ to OpenDNS.
 <br><br>
 <b>Suggestion: Edit your catch_phishing.py script so it only logs really bad
 issues, otherwise, you're going to be blocking potentially valid things, plus
-your OpenDNS block list will become quickly even more unamanable. The snippet
+your OpenDNS block list will become quickly even more unmanagable. The snippet
 below shows bumped my score threshold up to 120.</b>
 
 <pre>
